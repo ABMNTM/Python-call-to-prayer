@@ -40,6 +40,7 @@ if res.status_code == 200:
     table(main_times)
 
     while True:
+        sleep(.5)
         # checking the current time to identify azan time
         time = (str(datetime.now()).split('-'))[2][3:8]
         for t in main_times:
